@@ -1,12 +1,12 @@
 .contentdesc{
-    height: 700px;
+    height: 800px;
     min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;   
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding-top: 2rem;
 }
 
 .line{
@@ -92,15 +92,20 @@ a{
 
 
 .cta-social{
-    
-    width: 30%;
+ 
+    margin: 0 auto;
     height: 100%;
     align-self: center;
     text-align: center;
-    
+
     p{
         padding-top: 2rem;
         padding-bottom: 2rem;
+    }
+    .line{
+        width: 0px;
+        animation: linediv .3s ease-out forwards;
+        margin: 0 auto;
     }
 }
 
@@ -131,6 +136,7 @@ a{
 
 .dl{
     animation-delay: 400ms;
+
 }
 
 @keyframes makas{
@@ -158,5 +164,11 @@ a{
 @keyframes linefade{
     to{
         width: 100%;
+    }
+}
+
+@keyframes linediv{
+    to{
+        width:350px;
     }
 }
