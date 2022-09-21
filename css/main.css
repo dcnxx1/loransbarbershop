@@ -1,1 +1,228 @@
-/*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: "Timeless", sans-serif;
+  src: url("../../font/timeless/Timeless.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Timeless-Bold", sans-serif;
+  src: url(../../font/timeless/Timeless-Bold.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Times New Roman PS", "Timeless-Bold", sans-serif;
+  src: url("../../font/TimesNewRomanPS.otf") format("otf");
+}
+@font-face {
+  font-family: "DMSans-Regular";
+  src: url(../../font/dm_sans/DMSans-Regular.ttf);
+}
+.contentdesc {
+  height: 700px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.line {
+  height: 1px;
+  background: linear-gradient(to right, #F2CA46, #F0A500);
+}
+
+.img-container {
+  align-self: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex: 1;
+}
+
+.img-main {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5px;
+}
+
+.loransmakas {
+  -webkit-animation: makas 7s ease infinite;
+          animation: makas 7s ease infinite;
+  width: 80px;
+}
+
+.text1 {
+  -webkit-animation: makas 7s ease infinite;
+          animation: makas 7s ease infinite;
+  font-size: 5rem;
+}
+
+.text2 {
+  transform: translateX(-5px);
+  -webkit-animation: makas 7s ease infinite;
+          animation: makas 7s ease infinite;
+  font-size: 5rem;
+}
+
+.text3 {
+  font-size: 3rem;
+  letter-spacing: 12px;
+  font-family: "Times New Roman PS";
+}
+
+.linefade {
+  width: 0;
+  -webkit-animation: linefade 0.6s ease forwards;
+          animation: linefade 0.6s ease forwards;
+}
+
+.content-container {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.content-header {
+  width: 100%;
+  text-align: center;
+}
+.content-header p {
+  font-size: 3rem;
+}
+
+.content-cta {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.content-cta a {
+  font-size: 2.6rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
+  padding: 0 0.5rem;
+}
+
+.cta-social {
+  width: 30%;
+  height: 100%;
+  align-self: center;
+  text-align: center;
+}
+.cta-social p {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.icon {
+  width: 80px;
+}
+
+.icon-link {
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  margin: 0 50px;
+  transition: all 0.2s ease-out;
+}
+.icon-link:hover {
+  transform: scale(1.2);
+  border-bottom: 2px solid gold;
+  padding-bottom: 0.5rem;
+}
+
+.fadeIA {
+  -webkit-animation: fadeIA 1s ease forwards;
+          animation: fadeIA 1s ease forwards;
+  opacity: 0;
+}
+
+.dl {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+@-webkit-keyframes makas {
+  0% {
+    filter: drop-shadow(2px 2px 7px transparent);
+  }
+  50% {
+    filter: drop-shadow(0px 0px 2px gold);
+    color: gold;
+  }
+  100% {
+    filter: drop-shadow(2px 2px 7px transparent);
+  }
+}
+
+@keyframes makas {
+  0% {
+    filter: drop-shadow(2px 2px 7px transparent);
+  }
+  50% {
+    filter: drop-shadow(0px 0px 2px gold);
+    color: gold;
+  }
+  100% {
+    filter: drop-shadow(2px 2px 7px transparent);
+  }
+}
+@-webkit-keyframes fadeIA {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIA {
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes linefade {
+  to {
+    width: 100%;
+  }
+}
+@keyframes linefade {
+  to {
+    width: 100%;
+  }
+}
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  max-width: 2500px;
+  background: #000;
+  font-size: 62.5%;
+}
+
+h1, h2, h3 {
+  color: whitesmoke;
+  font-family: "Times New Roman PS";
+  font-size: 3rem;
+}
+
+p {
+  color: whitesmoke;
+  font-family: "DMSans-Regular";
+  font-size: 2rem;
+}
+
+a {
+  text-underline-offset: 5px;
+  font-size: 2rem;
+  font-family: "Times New Roman PS";
+}
+a:visited {
+  color: whitesmoke;
+}
+a:not(:visited) {
+  color: whitesmoke;
+}/*# sourceMappingURL=main.css.map */

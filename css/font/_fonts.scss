@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Timeless', sans-serif;
+    src: url('../../font/timeless/Timeless.ttf') format("ttf");
+}
+
+@font-face {
+    font-family: 'Timeless-Bold', sans-serif;
+    src: url(../../font/timeless/Timeless-Bold.ttf) format("ttf");
+}
+
+@font-face{
+    font-family: 'Times New Roman PS', 'Timeless-Bold', sans-serif;
+    src: url('../../font/TimesNewRomanPS.otf') format("otf");
+
+}
+
+@font-face{
+    font-family: 'DMSans-Regular';
+    src: url(../../font/dm_sans/DMSans-Regular.ttf);
+}
+
+
+
+$main: 'Times New Roman PS';
+
+$chiq: 'Timeless';
+$chiq-bold: 'Timeless-Bold';
+
+$sub-regular: 'DMSans-Regular'

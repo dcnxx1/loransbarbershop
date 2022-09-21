@@ -1,0 +1,162 @@
+.contentdesc{
+    height: 700px;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.line{
+    height: 1px;
+    background: linear-gradient(to right, #F2CA46, #F0A500);
+}
+
+.img-container{
+   align-self: center;    
+   width: fit-content;
+   flex: 1;
+}
+
+.img-main{
+    display: flex;
+    align-items: flex-end; 
+    padding-bottom: 5px;  
+}
+
+.loransmakas{
+    animation: makas 7s ease infinite;
+    width: 80px;
+}
+
+.text1{
+    animation: makas 7s ease infinite;
+    font-size: 5rem;
+}
+
+.text2{
+    transform: translateX(-5px);
+    animation: makas 7s ease infinite;
+    font-size: 5rem;
+}
+
+.text3{
+    font-size: 3rem;
+    letter-spacing: 12px;
+    font-family: $main;
+}
+
+
+.linefade{
+    width: 0;
+    animation: linefade .6s ease forwards;
+}
+
+
+.content-container{
+    width: 100%;
+
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  
+}
+
+.content-header{
+    width: 100%;
+    text-align: center;
+
+    p{
+        font-size: 3rem;
+    }
+}
+
+.content-cta{
+width: 100%;
+text-align: center;
+display: flex;
+flex-direction: column;
+gap: 40px;
+
+a{
+    font-size: 2.6rem;
+    width: fit-content;
+    align-self: center;
+    padding: 0 .5rem;
+}
+}
+
+
+.cta-social{
+    
+    width: 30%;
+    height: 100%;
+    align-self: center;
+    text-align: center;
+    
+    p{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.icon{
+    width: 80px;
+}
+
+.icon-link{
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    
+    margin: 0 50px;
+    transition: all .2s ease-out;
+    &:hover{
+        transform: scale(1.2);
+        border-bottom: 2px solid gold;
+        padding-bottom: .5rem;
+        
+    }
+}
+
+
+.fadeIA{
+    animation: fadeIA 1s ease forwards;
+    opacity: 0;
+}
+
+
+.dl{
+    animation-delay: 400ms;
+}
+
+@keyframes makas{
+    0%{
+        filter: drop-shadow(2px 2px 7px transparent);
+    }
+
+    50%{
+        filter: drop-shadow(0px 0px 2px gold);
+      
+        color: gold;
+    }
+
+    100%{
+        filter: drop-shadow(2px 2px 7px transparent);
+    }
+}
+
+@keyframes fadeIA{
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes linefade{
+    to{
+        width: 100%;
+    }
+}
