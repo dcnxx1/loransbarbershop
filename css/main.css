@@ -211,6 +211,21 @@
     width: 350px;
   }
 }
+@media screen and (max-width: 401px) {
+  .icon {
+    width: 50px;
+  }
+  @-webkit-keyframes linediv {
+    to {
+      width: 90%;
+    }
+  }
+  @keyframes linediv {
+    to {
+      width: 90%;
+    }
+  }
+}
 *, *::before, *::after {
   padding: 0;
   margin: 0;

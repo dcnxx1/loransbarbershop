@@ -172,3 +172,17 @@ a{
         width:350px;
     }
 }
+
+@media screen and (max-width: 401px){
+    .icon{
+        width: 50px;
+    }
+
+    
+
+    @keyframes linediv{
+        to{
+            width:90%;
+        }
+    }
+}
