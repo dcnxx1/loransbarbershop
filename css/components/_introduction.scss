@@ -1,11 +1,13 @@
 .contentdesc{
     min-height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;   
     align-items: center;
     justify-content: center;
     padding-top: 2rem;
+
 }
 
 .line{
@@ -40,7 +42,6 @@
 .text3{
     font-size: 3rem;
     letter-spacing: 12px;
-    font-family: $main;
 }
 
 
@@ -52,7 +53,7 @@
 
 .content-container{
     width: 100%;
-
+    
     height: 100%;
     padding: 2rem;
     display: flex;
@@ -73,6 +74,7 @@
 .content-cta{
 width: 100%;
 text-align: center;
+
 display: flex;
 flex-direction: column;
 gap: 40px;
@@ -87,15 +89,14 @@ a{
 
 
 .cta-social{
- 
-    margin: 0 auto;
-    height: 100%;
+
+   
     align-self: center;
     text-align: center;
-
+    
     p{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+    padding: 1.5rem;     
+   
     }
     .line{
         width: 0px;
@@ -104,18 +105,23 @@ a{
     }
 }
 
+
+
 .icon{
     width: 80px;
+    
+   
 }
 
 .icon-link{
     display: inline-block;
     border-bottom: 2px solid transparent;
-    
+    padding-bottom: .5rem;
     margin: 0 50px;
     transition: all .2s ease-out;
     &:hover{
-        transform: scale(1.2);
+     
+
         border-bottom: 2px solid gold;
         padding-bottom: .5rem;
         

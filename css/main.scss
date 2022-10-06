@@ -23,7 +23,6 @@ main {
 
 h1 , h2 ,h3{
     color: whitesmoke;
-    font-family: $main;
     font-size: 3rem;
 }
 
@@ -36,7 +35,6 @@ p{
 a{
     text-underline-offset: 5px;
     font-size: 2rem;
-    font-family: $main;
 
     &:visited{
         color: whitesmoke;

@@ -1,29 +1,4 @@
-@import url(//db.onlinewebfonts.com/c/61c81a93fc1cbc8a8a687477b78a6795?family=Times+New+Roman+PS);
 
-// @font-face{
-//     font-family: "TimesNewRomanPS", 'Timeless-Bold', sans-serif;
-//     src: local("TimesNewRomanPS"),
-//      url(../../font/TimesNewRomanPS.ttf) format("ttf") ,
-//      url(../../font/TimesNewRomanPS.otf) format("otf"),
-//      url(../../font/TimesNewRomanPS.woff) format("woff"),
-//      url(../../font/TimesNewRomanPS.woff2) format("woff2"),
-//      url(../../font/TimesNewRomanPS.eot) format("eot");
-//      font-weight: normal;
-//      font-style: normal;
-// }
-
-@font-face {
-    font-weight: 100;
-    font-style: normal;
-    font-family: "Times New Roman PS"; 
-    src: url("//db.onlinewebfonts.com/t/61c81a93fc1cbc8a8a687477b78a6795.eot"); 
-    src: url("//db.onlinewebfonts.com/t/61c81a93fc1cbc8a8a687477b78a6795.eot?#iefix") format("embedded-opentype"), 
-    url("//db.onlinewebfonts.com/t/61c81a93fc1cbc8a8a687477b78a6795.woff2") format("woff2"), 
-    url("//db.onlinewebfonts.com/t/61c81a93fc1cbc8a8a687477b78a6795.woff") format("woff"), 
-    url("//db.onlinewebfonts.com/t/61c81a93fc1cbc8a8a687477b78a6795.ttf") format("truetype"), 
-    url("//db.onlinewebfonts.com/t/61c81a93fc1cbc8a8a687477b78a6795.svg#Times New Roman PS") format("svg"); 
-
-} 
 
 
 @font-face {
@@ -45,7 +20,7 @@
 
 
 
-$main: 'Times New Roman PS';
+
 
 $chiq: 'Timeless';
 $chiq-bold: 'Timeless-Bold';
