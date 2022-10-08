@@ -1,1 +1,90 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  padding: 20px;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited {
+  color: inherit;
+}
+
+.nav-links {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  font-family: "Bellefair", serif;
+  font-weight: 500;
+  color: #F2CA46;
+  font-size: 18px;
+}
+.nav-links ul {
+  width: 100%;
+  list-style-position: inside;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: flex-end;
+}
+.nav-links ul li {
+  cursor: pointer;
+  position: relative;
+}
+
+.hoverunder {
+  display: inline-block;
+  padding-bottom: 2px;
+  background-image: linear-gradient(#F2CA46, #F0A500);
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s;
+}
+.hoverunder:hover {
+  background-position: 100% 100%;
+  background-size: 100% 2px;
+}
+
+.logo {
+  width: 130px;
+  cursor: pointer;
+}
+
+.heading img {
+  width: 100%;
+  height: 500px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main {
+  background: red;
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */

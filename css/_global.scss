@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
 $f-n : 16px;
 $f-nb: 18px;
 
@@ -8,3 +10,83 @@ $gold-right: #F0A500;
 $black : #000;
 $blackl: #131313;
 $smoke : whitesmoke;
+
+
+// FONTS 
+
+$lyxe : 'Bellefair', serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: black;
+}
+
+img{
+    user-select: none;
+}
+
+header{
+    width: 100%;
+}
+
+
+nav{
+   
+    padding: 20px;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    &:visited{
+        color: inherit;
+    }
+}
+
+.nav-links{
+    display: flex;
+    
+    width: 100%;
+    align-items: center;
+    font-family: $lyxe;
+    font-weight: 500;
+    color: $gold-light;
+    font-size: $f-nb;
+
+    ul{
+        width: 100%;
+        list-style-position: inside;
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-evenly;
+        align-self: flex-end;
+        li{
+            cursor: pointer;
+            position: relative;
+        }
+    }
+}
+
+.hoverunder{
+    display: inline-block;
+    padding-bottom: 2px;
+    background-image: linear-gradient($gold-light, $gold-right);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition: background-size .3s, 
+    background-position 0s .3s;
+
+    &:hover{
+        background-position: 100% 100%;
+        background-size: 100% 2px;
+    }
+}
