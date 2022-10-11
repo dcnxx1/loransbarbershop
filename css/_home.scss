@@ -24,7 +24,6 @@ main{
     margin: 0 auto;
     font-family: $quattro;
     color: $smoke;
-    translate: 0 -50px;
     padding: 2rem;
     section{
         
@@ -38,7 +37,14 @@ main{
 
     header{
         margin-bottom: 2rem;
+        width: 100%;
+        
     }
+}
+
+.header-heading{
+   width: fit-content;
+   margin-left: auto;
 }
 
 .content-container{

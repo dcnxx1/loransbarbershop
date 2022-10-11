@@ -27,6 +27,7 @@ header {
 }
 
 nav {
+  max-width: 1920px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -89,12 +90,18 @@ a:visited {
 }
 
 footer {
-  background: #131313;
   height: 100px;
   color: whitesmoke;
   font-family: "Quattrocento Sans", sans-serif;
   font-size: 18px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 100%;
 }
 
 .logo {
@@ -127,7 +134,6 @@ main {
   margin: 0 auto;
   font-family: "Quattrocento Sans", sans-serif;
   color: whitesmoke;
-  translate: 0 -50px;
   padding: 2rem;
 }
 main section {
@@ -140,6 +146,14 @@ main section {
 }
 main header {
   margin-bottom: 2rem;
+  width: 100%;
+}
+
+.header-heading {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
 }
 
 .content-container {

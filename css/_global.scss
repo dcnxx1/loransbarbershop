@@ -44,6 +44,8 @@ header{
 
 
 nav{
+    max-width: 1920px;
+    
     position: fixed;
     top: 0;
     width: 100%;
@@ -51,7 +53,7 @@ nav{
     padding: 20px;
     display: flex;
     z-index: 99;
-
+    
     background: rgba(0, 0, 0, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(13.4px);
@@ -114,10 +116,20 @@ a{
 
 
 footer{
-    background: $blackl;
     height: 100px;
     color: $smoke;
     font-family: $quattro;
     font-size: 18px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content{
+    width: 100%;
+}
+
+.footer-logo{
+    
 }
