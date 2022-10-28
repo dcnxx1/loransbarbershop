@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$quattro: 'Quatrtrocento Sans', sans-serif;
+$bell : 'Bellefair', sans-serif;
+
+
+
+body{
+    background: #000;
+}
+
+h1, h2, h3, h4, p, a, span{
+    color: white;
+    font-family: $bell;
+}

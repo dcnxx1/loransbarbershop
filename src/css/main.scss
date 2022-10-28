@@ -1,6 +1,34 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background: red;
+@import'./global';
+@import './pages/index';
+@import './pages/components/nav';
+
+
+//  Mobile: 360 x 640
+@media screen and (min-width: 360px){
+
+
+}
+
+// Mobile: 375 x 667 / iPhone X: 375 x 812
+@media screen and (min-width: 375px){
+
+}
+
+
+// Pixel 2: 411 x 731
+@media screen and (min-width: 441px){
+
+}
+// Tablet: 768 x 1024
+@media screen and (min-width: 768){
+
+}
+//  Laptop: 1366 x 768
+@media screen and (min-width: 1366px){
+
+}
+// High-res laptop or desktop: 1920 x 1080
+@media screen and (min-width: 1920px){
+
+
 }
