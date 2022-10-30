@@ -1,49 +1,236 @@
 
 
-@media screen and (min-width: 320px){
+@media screen and (min-width: 0px){
     header{
         width: 100%;
         height: 100%;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+
+        background: rgba(0, 0, 0, 0.28);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.5px);
+        -webkit-backdrop-filter: blur(7.5px);
+
 
         .mobile-menu{
-            
+            width: 100%;
+            position: absolute;
+            background: rgba(0, 0, 0, 0.28);
+            backdrop-filter: blur(7.5px);
+            -webkit-backdrop-filter: blur(7.5px);
+        }
+
+        #mobile-nav{
+            .menu-holder{
+                text-align: center;
+                padding-top: .5rem;
+                h2{
+                    display: inline-block;
+                    font-family: $bell;
+                    font-size: 28px !important;
+                    padding-bottom: .5rem;
+                }
+                .gold-bar{
+                    width: 80%;
+                    max-width: 768px;
+                    height: 2px;
+                    margin-inline: auto;
+                    background: linear-gradient(to right, $gold-light, $gold);
+                }
+            }
+
+            ul{
+
+                li{
+                    width: 100%;
+                    text-align: center;
+                    padding: 1rem;
+                    font-size: 22px;
+                    font-family: $bell;
+                }
+            }
         }
     }
 
     #nav{
+       z-index: 4;
         width: 100%;
         height: 50px;
-        padding: 5px;
         display: flex;
+        padding-inline: 10px;
+        overflow-x: hidden;
+        overflow-y: hidden;
         .logo-nav{
             width: 100px;
             object-fit: contain;
+            cursor: pointer;
+            user-select:none;
         }
 
         ul{
             display: none;
+      
         }
 
         .menu-burger{
             display: flex;
-            border: 2px solid white;
+            
             width: 100%;
             justify-content: end;
+           
             .line-container{
-                border: 2px solid white;
-                
+                // border: 2px solid white;
+                width: 50px;
+                cursor: pointer;
+                position: relative;
                 .line-long{
+                    position: absolute;
                     width: 45px;
-                    
-                    padding: 1px;
                     height: 2px;
+                    right: 1px;
                     background: white;
-                    margin-bottom: 10px;
+                    bottom: 10px;
+                    rotate: 180deg;
+                    &:nth-child(1){
+                        bottom: 25px;
+                    }
                 }
             }
         }
     }
 }
+
+.hide{
+    // display: none;
+    animation: hideMobileNav .4s forwards;
+}
+
+.show{
+    display: block;
+    animation: showMobileNav .4s forwards;
+}
+
+.hide-menu-burger{
+    display: none;
+    opacity: 0;
+    animation: hideMenuBurger .4s ease-in forwards;
+}
+
+@keyframes hideMenuBurger{
+    to{
+        display: none;
+        opacity: 0;
+    }
+}
+
+@keyframes showMobileNav{
+    from{
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes hideMobileNav{
+    from{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+}
+
+.normal-menu{
+    &:nth-child(1){
+        animation: transformToUpper .4s forwards;
+    }
+    &:nth-child(2){
+        animation: transformToDown .4s forwards;
+    }
+}
+
+.x-menu-from{
+    &:nth-child(1){
+        animation: transformUpper .4s forwards;
+        
+    }
+    &:nth-child(2){
+        animation: transformDown .4s forwards;
+     
+    }
+}
+
+
+
+// transform to normal menu
+@keyframes transformToUpper{
+    from {
+        transform: rotate(130deg);
+        translate: 15px 0px ;
+        right: 20px;
+        width: 25px;
+        background: linear-gradient( $gold-light, $gold);
+    }
+    to{
+        transform: rotate(360deg);
+        translate: 0px;
+        right: 1px;
+        width: 45px;
+    }
+}
+// tranforms to normal menu
+@keyframes transformToDown{
+    from {
+        transform: rotate(230deg);
+        translate: 15px -15px;
+        right: 20px;
+        width: 25px;
+        background: linear-gradient( $gold-light, $gold);
+    }
+    
+    to{
+        transform: rotate(360deg);
+        translate: 0px 0px;
+        right: 1px;
+        width: 45px;
+    }
+}
+
+// transform to x
+@keyframes transformUpper{
+    to{
+        transform: rotate(130deg);
+        translate: 15px 0px ;
+        right: 20px;
+        width: 25px;
+        background: linear-gradient( $gold-light, $gold);
+    }
+}
+// transforms to x
+@keyframes transformDown{
+    to{
+        transform: rotate(230deg);
+        translate: 15px -15px;
+        right: 20px;
+        width: 25px;
+        background: linear-gradient( $gold-light, $gold);
+    }
+}
+
+
+
+
+
+
 //  Mobile: 360 x 640
 @media screen and (min-width: 360px){
    
@@ -57,12 +244,56 @@
 
 // Pixel 2: 411 x 731
 @media screen and (min-width: 441px){
-
 }
 // Tablet: 768 x 1024
 @media screen and (min-width: 768px){
-
+   
+header{
+   display: grid;
+   height: 90px;
+   align-content: center;
+   
+   
 }
+
+    #nav{
+        width: 100%;
+        max-width: 1270px;
+        margin-inline: auto;
+        .logo-nav{
+            width: 140px;
+            box-shadow: 1px 4px 3px solid white;
+            flex: 1;
+        }
+
+        .menu-burger{
+            display: none;
+        }
+        ul{
+            opacity: 1;
+            display: flex;
+            padding-top: 10px;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+
+            li{
+                font-size: 22px;
+                text-align: center;
+                    a{
+                        
+                        padding-inline: 10px;
+                        letter-spacing: 1.2px;
+                        
+                    }
+            }
+        }
+    }
+}
+
+
+
+
 //  Laptop: 1366 x 768
 @media screen and (min-width: 1366px){
 

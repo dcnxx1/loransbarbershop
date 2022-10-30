@@ -11,12 +11,72 @@ $quattro: 'Quatrtrocento Sans', sans-serif;
 $bell : 'Bellefair', sans-serif;
 
 
+// COLORS
+
+$black1: #1C1C1C;
+$grey: #3B3B3B;
+$yellow-bright: #FFE002;
+$gold-light: #FFB606;
+$gold : #B28228;
 
 body{
-    background: #000;
+   background: $black1;
 }
 
-h1, h2, h3, h4, p, a, span{
+section{
+    height: 100vh;
+}
+
+h1, h2, h3, h4, p, a, span, li{
+    color: white;
+    font-weight: 400;
+    font-family: $quattro;
+}
+
+a {
+    text-decoration: none;
     color: white;
     font-family: $bell;
+    &:visited{
+        color: white;
+    }
+}
+
+.cta-book{
+    color: $gold-light !important;
+}
+
+ul{
+    text-decoration-line: none;
+    list-style: none;
+    
+}
+
+.noTransition{
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+.hide-initial{
+    display: none;
+}
+
+
+
+
+
+// disable blue background onClick
+.noSelect {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.noSelect:focus {
+    outline: none !important;
 }
