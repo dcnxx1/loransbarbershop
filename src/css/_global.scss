@@ -11,8 +11,11 @@ $quattro: 'Quatrtrocento Sans', sans-serif;
 $bell : 'Bellefair', sans-serif;
 
 
-// COLORS
+$fm-s: 18px;
+$fm-b: 28px;
 
+// COLORS
+$black : #000;
 $black1: #1C1C1C;
 $grey: #3B3B3B;
 $yellow-bright: #FFE002;
@@ -20,19 +23,19 @@ $gold-light: #FFB606;
 $gold : #B28228;
 
 body{
-   background: $black1;
+   background: $black;
 }
 
-section{
-    height: 100vh;
-}
+
 
 h1, h2, h3, h4, p, a, span, li{
     color: white;
     font-weight: 400;
     font-family: $quattro;
 }
-
+p{
+    font-family: $quattro !important;
+}
 a {
     text-decoration: none;
     color: white;
@@ -63,10 +66,15 @@ ul{
     display: none;
 }
 
+.gold-bar{
+    height: 2px;
+    margin-block: 5px;
+    background: linear-gradient($gold-light, $gold);
+}
 
-
-
-
+main{
+    width: 100%;
+}
 // disable blue background onClick
 .noSelect {
     -webkit-tap-highlight-color: transparent;

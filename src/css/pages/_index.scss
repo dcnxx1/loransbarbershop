@@ -1,0 +1,103 @@
+@media screen and (min-width: 0px){
+
+
+    .container{
+        width: 100%;
+        padding: 10px;
+        min-width: 320px;
+        z-index: 2;
+    }
+
+    .intro-style{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 250px 1fr;
+
+
+        .intro-img{
+            text-align: center;
+            .img-intro{
+                width: 100%;
+                max-width: 250px;
+                z-index: 2;
+            }
+        }
+
+        #intro{
+            font-size: $fm-s;
+            transform: translateY(-50px);
+            p{min-height: 150px;}
+            .cta-learn{
+                display: inline;
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 320px;
+                a{
+                    padding: 20px;
+                    border: 2px solid $gold;
+                    font-size: calc($fm-s + 2px) ;
+                }
+            }
+        }
+
+
+    }
+
+
+    #reviews{
+        width: 100%;
+        background: $gold;
+        height: 100px;
+    }
+
+        #showcase{
+            border: 2px solid white;
+            width: 100%;
+            
+            .showcase-heading{
+                text-align: right;
+            }
+
+            .article-cut{
+                border: 2px solid green;
+
+                .article{
+                    border: 2px solid yellow;
+                    text-align: center;
+                }
+            }
+        }
+    
+}
+
+//  Mobile: 360 x 640
+@media screen and (min-width: 360px){
+
+
+}
+
+// Mobile: 375 x 667 / iPhone X: 375 x 812
+@media screen and (min-width: 375px){
+
+}
+
+
+// Pixel 2: 411 x 731
+@media screen and (min-width: 441px){
+
+}
+// Tablet: 768 x 1024
+@media screen and (min-width: 768){
+
+}
+//  Laptop: 1366 x 768
+@media screen and (min-width: 1366px){
+
+}
+// High-res laptop or desktop: 1920 x 1080
+@media screen and (min-width: 1920px){
+
+
+}

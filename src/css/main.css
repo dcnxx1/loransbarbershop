@@ -7,17 +7,17 @@
 }
 
 body {
-  background: #1C1C1C;
-}
-
-section {
-  height: 100vh;
+  background: #000;
 }
 
 h1, h2, h3, h4, p, a, span, li {
   color: white;
   font-weight: 400;
   font-family: "Quatrtrocento Sans", sans-serif;
+}
+
+p {
+  font-family: "Quatrtrocento Sans", sans-serif !important;
 }
 
 a {
@@ -47,6 +47,16 @@ ul {
   display: none;
 }
 
+.gold-bar {
+  height: 2px;
+  margin-block: 5px;
+  background: linear-gradient(#FFB606, #B28228);
+}
+
+main {
+  width: 100%;
+}
+
 .noSelect {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -61,50 +71,126 @@ ul {
 }
 
 @media screen and (min-width: 0px) {
-  header {
+  .container {
+    width: 100%;
+    padding: 10px;
+    min-width: 320px;
+    z-index: 2;
+  }
+  .intro-style {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 1fr;
+  }
+  .intro-style .intro-img {
+    text-align: center;
+  }
+  .intro-style .intro-img .img-intro {
+    width: 100%;
+    max-width: 250px;
+    z-index: 2;
+  }
+  .intro-style #intro {
+    font-size: 18px;
+    transform: translateY(-50px);
+  }
+  .intro-style #intro p {
+    min-height: 150px;
+  }
+  .intro-style #intro .cta-learn {
+    display: inline;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 320px;
+  }
+  .intro-style #intro .cta-learn a {
+    padding: 20px;
+    border: 2px solid #B28228;
+    font-size: 20px;
+  }
+  #reviews {
+    width: 100%;
+    background: #B28228;
+    height: 100px;
+  }
+  #showcase {
+    border: 2px solid white;
+    width: 100%;
+  }
+  #showcase .showcase-heading {
+    text-align: right;
+  }
+  #showcase .article-cut {
+    border: 2px solid green;
+  }
+  #showcase .article-cut .article {
+    border: 2px solid yellow;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 0px) {
+  #navheader {
+    z-index: 11;
     width: 100%;
     height: 100%;
+    min-width: 320px;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background: rgba(0, 0, 0, 0.28);
+    background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur(7.5px);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
   }
-  header .mobile-menu {
-    width: 100%;
+  #navheader .mobile-menu {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
     position: absolute;
-    background: rgba(0, 0, 0, 0.28);
-    backdrop-filter: blur(7.5px);
-    -webkit-backdrop-filter: blur(7.5px);
+    width: 100%;
   }
-  header #mobile-nav .menu-holder {
+  #navheader #mobile-nav {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: 100%;
+  }
+  #navheader #mobile-nav .menu-holder {
     text-align: center;
     padding-top: 0.5rem;
   }
-  header #mobile-nav .menu-holder h2 {
+  #navheader #mobile-nav .menu-holder h2 {
     display: inline-block;
     font-family: "Bellefair", sans-serif;
     font-size: 28px !important;
     padding-bottom: 0.5rem;
   }
-  header #mobile-nav .menu-holder .gold-bar {
+  #navheader #mobile-nav .menu-holder .gold-bar {
     width: 80%;
     max-width: 768px;
     height: 2px;
     margin-inline: auto;
     background: linear-gradient(to right, #FFB606, #B28228);
   }
-  header #mobile-nav ul li {
+  #navheader #mobile-nav ul {
+    width: 100%;
+    height: 100%;
+  }
+  #navheader #mobile-nav ul li {
     width: 100%;
     text-align: center;
     padding: 1rem;
     font-size: 22px;
     font-family: "Bellefair", sans-serif;
+    z-index: 10;
   }
   #nav {
-    z-index: 4;
     width: 100%;
     height: 50px;
     display: flex;
@@ -344,10 +430,10 @@ ul {
     width: 100%;
     max-width: 1270px;
     margin-inline: auto;
+    height: 100%;
   }
   #nav .logo-nav {
     width: 140px;
-    box-shadow: 1px 4px 3px solid white;
     flex: 1;
   }
   #nav .menu-burger {
@@ -356,13 +442,12 @@ ul {
   #nav ul {
     opacity: 1;
     display: flex;
-    padding-top: 10px;
     width: 100%;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
   }
   #nav ul li {
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
   }
   #nav ul li a {
