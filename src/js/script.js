@@ -4,7 +4,13 @@ const mobileMenu = document.querySelector('.mobile-menu')
 const header = document.getElementById('header')
 
 
-
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+    pagination: {
+        el: ".swiper-pagination",
+       
+    }
+})
 
  // hides mobile menu
 function hideMobileMenu() {

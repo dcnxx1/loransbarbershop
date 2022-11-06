@@ -1,0 +1,52 @@
+@media screen and (min-width: 360px){
+
+.card-carousel{
+    padding-top: 20px;
+    .swiper{
+
+        min-width: 360px;
+        .swiper-wrapper{
+    
+           
+           
+            .swiper-slide{
+       
+                text-align: center;
+                .cut-img{
+                    width: 300px;
+                }
+            }
+        }
+
+        .swiper-pagination-bullet-active{
+            background: $gold !important;
+        }
+    }
+
+}
+
+}
+
+// Mobile: 375 x 667 / iPhone X: 375 x 812
+@media screen and (min-width: 375px){
+
+}
+
+
+// Pixel 2: 411 x 731
+@media screen and (min-width: 441px){
+
+}
+// Tablet: 768 x 1024
+@media screen and (min-width: 768){
+
+}
+//  Laptop: 1366 x 768
+@media screen and (min-width: 1366px){
+
+}
+// High-res laptop or desktop: 1920 x 1080
+@media screen and (min-width: 1920px){
+
+
+}

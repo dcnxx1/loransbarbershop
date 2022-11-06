@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lorans Barbershop: Kapper Nieuw-Vennep</title>
     <link rel="stylesheet" href="../css/main.css" type="text/css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script defer src="../js/script.js"></script>
-</head>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  </head>
 <body>
   <%- include('./compounds/nav')  %> 
   <!-- MAIN -->
@@ -52,49 +57,102 @@
         <!-- CUT 1 -->
         <article class="article cut-one">
           <figure>
-            <img src="https://unsplash.it/200/200" />
+            <img draggable="false" class="cut-img noSelect" src="../assets/images/cut-coupe1.jpg" />
           </figure>
 
-          <header>
-            <h2>Lorem1</h2>
-          </header>
-          <div class="gold-bar"></div>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum voluptatibus libero quibusdam eius incidunt consequatur? Voluptatem.</p>
+          <div class="cut-text">
+            <header>
+              <h2>Lorem1</h2>
+            </header>
+            <div class="gold-bar"></div>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum voluptatibus libero quibusdam eius incidunt consequatur? Voluptatem.</p>
+            </div>
         </article>
         <!-- CUT 2 -->
         <article class="article cut-one">
           <figure>
-            <img src="https://unsplash.it/200/200" />
+            <img draggable="false" class="cut-img noSelect" src="../assets/images/cut-coupe2.jpg" />
           </figure>
 
-          <header>
-            <h2>Lorem1</h2>
-          </header>
-          <div class="gold-bar"></div>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum voluptatibus libero quibusdam eius incidunt consequatur? Voluptatem.</p>
+          <div class="cut-text">
+            <header>
+              <h2>Lorem1</h2>
+            </header>
+            <div class="gold-bar"></div>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum voluptatibus libero quibusdam eius incidunt consequatur? Voluptatem.</p>
+            </div>
         </article>
         
         <!-- CUT 3 -->
         <article class="article cut-one">
           <figure>
-            <img src="https://unsplash.it/200/200" />
+            <img draggable="false" class="cut-img noSelect" src="../assets/images/cut-coupe3.jpg" />
           </figure>
-
+          <div class="cut-text">
           <header>
             <h2>Lorem1</h2>
           </header>
           <div class="gold-bar"></div>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum voluptatibus libero quibusdam eius incidunt consequatur? Voluptatem.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum voluptatibus libero quibusdam eius incidunt consequatur? Voluptatem.</p>
+          </div>
         </article>
       </div>
     </section>
-
     <!-- !SHOWCASE ! -->
+
+    <!-- CAROUSEL -->
+    <section id="carousel">
+      <h2>Shots uit onze <a href="https://www.instagram.com/loransbarbershop/">Instagram </a> </h2>
+      <div class="gold-bar"></div>
+      <div class="card-carousel">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img class="cut-img" src="../assets/images/cut-coupe2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="cut-img" src="../assets/images/cut-coupe2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img class="cut-img" src="../assets/images/cut-coupe2.jpg" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ! CAROUSEL !  -->
+
+
+    <section id="openinghours">
+      <h2>Onze openingstijden</h2>
+      <div class="opening-container">
+        <div class="day day-monday">
+          <span>Maandag</span> <br>
+          <span>12:00 - 17:30</span>
+          <div class="line"></div>
+        </div>
+        <div class="day day-tuesday">
+          <span>Dinsdag</span> <br>
+          <span>12:00 - 17:30</span>
+          <div class="line"></div>
+        </div>
+        <div class="day day-wednesday">
+          <span>Woensdag</span> <br>
+          <span>12:00 - 17:30</span> <br>
+          <div class="line"></div>
+        </div>
+        
+      </div>
+    </section>
+
   </main>   
   <!-- ! MAIN !  -->
 <footer>
 
 </footer>
+
 </body>
 
 </html>

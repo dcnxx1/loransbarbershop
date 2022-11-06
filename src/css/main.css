@@ -13,11 +13,11 @@ body {
 h1, h2, h3, h4, p, a, span, li {
   color: white;
   font-weight: 400;
-  font-family: "Quatrtrocento Sans", sans-serif;
+  font-family: "Quattrocento Sans", sans-serif;
 }
 
 p {
-  font-family: "Quatrtrocento Sans", sans-serif !important;
+  font-family: "Quattrocento Sans", sans-serif !important;
 }
 
 a {
@@ -27,6 +27,14 @@ a {
 }
 a:visited {
   color: white;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+span {
+  font-family: "Quattrocento Sans", sans-serif;
 }
 
 .cta-book {
@@ -116,18 +124,98 @@ main {
     height: 100px;
   }
   #showcase {
-    border: 2px solid white;
     width: 100%;
   }
   #showcase .showcase-heading {
     text-align: right;
   }
-  #showcase .article-cut {
-    border: 2px solid green;
-  }
   #showcase .article-cut .article {
-    border: 2px solid yellow;
     text-align: center;
+  }
+  #showcase .article-cut .article figure {
+    position: relative;
+  }
+  #showcase .article-cut .article figure .cut-img {
+    width: 250px;
+    z-index: 5;
+  }
+  #showcase .article-cut .article figure::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 70px;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.85));
+    filter: blur(0.2px);
+    bottom: 0;
+  }
+  #showcase .article-cut .article .cut-text {
+    transform: translateY(-40px);
+    margin-inline: auto;
+  }
+  #carousel h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  #carousel h2 a {
+    font-family: "Quattrocento Sans", sans-serif;
+    color: #FFB606;
+    text-decoration: underline;
+  }
+  #openinghours .opening-container {
+    padding-top: 10px;
+    background: #B28228;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  #openinghours .opening-container .day {
+    text-align: center;
+  }
+  #openinghours .opening-container .day span {
+    color: #000;
+    padding-left: 7px;
+  }
+  #openinghours .opening-container .day .line {
+    margin-top: 15px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    position: relative;
+  }
+  #openinghours .opening-container .day-monday .line {
+    width: 50%;
+    margin-left: 50%;
+  }
+  #openinghours .opening-container .day-monday .line::before {
+    content: "";
+    width: 7px;
+    border-radius: 50%;
+    background: black;
+    height: 7px;
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+  }
+  #openinghours .opening-container .day-tuesday .line::before {
+    content: "";
+    width: 7px;
+    border-radius: 50%;
+    background: black;
+    height: 7px;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+  }
+  #openinghours .opening-container .day-wednesday .line::before {
+    content: "";
+    width: 7px;
+    border-radius: 50%;
+    background: black;
+    height: 7px;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
   }
 }
 @media screen and (min-width: 0px) {
@@ -421,7 +509,7 @@ main {
   }
 }
 @media screen and (min-width: 768px) {
-  header {
+  #navheader {
     display: grid;
     height: 90px;
     align-content: center;
@@ -453,5 +541,22 @@ main {
   #nav ul li a {
     padding-inline: 10px;
     letter-spacing: 1.2px;
+  }
+}
+@media screen and (min-width: 360px) {
+  .card-carousel {
+    padding-top: 20px;
+  }
+  .card-carousel .swiper {
+    min-width: 360px;
+  }
+  .card-carousel .swiper .swiper-wrapper .swiper-slide {
+    text-align: center;
+  }
+  .card-carousel .swiper .swiper-wrapper .swiper-slide .cut-img {
+    width: 300px;
+  }
+  .card-carousel .swiper .swiper-pagination-bullet-active {
+    background: #B28228 !important;
   }
 }/*# sourceMappingURL=main.css.map */

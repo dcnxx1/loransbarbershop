@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-$quattro: 'Quatrtrocento Sans', sans-serif;
+$quattro: 'Quattrocento Sans', sans-serif;
 $bell : 'Bellefair', sans-serif;
 
 
@@ -45,6 +45,13 @@ a {
     }
 }
 
+h2{
+    font-size: calc($fm-s + 2px) ;
+}
+
+span{
+    font-family: $quattro;
+}
 .cta-book{
     color: $gold-light !important;
 }

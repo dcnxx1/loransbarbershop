@@ -1,0 +1,30 @@
+@mixin dot{
+        content: '';
+        width: 7px;
+        border-radius: 50%;
+        background: black;
+        height: 7px;
+        position: absolute;
+        bottom: -2px;
+}
+
+@mixin dot-right{
+   &::after{
+    @include dot;
+    right: 0px;
+   }
+}
+
+@mixin dot-left{
+    &::before{
+        @include dot;
+        left: 0px;
+    }
+}
+
+@mixin dot-center{
+    &::before{
+        @include dot;
+        left:50%;
+    }
+}
